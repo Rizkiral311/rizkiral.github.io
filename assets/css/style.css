@@ -1,0 +1,275 @@
+*, body{
+     margin:0;
+     padding:0
+    }
+
+body{ 
+    background-color: rgba(20, 0, 130, 0.507);
+}
+/* color */
+.bg-green{
+    background-color: #52dc90;
+    color: #fff;
+    box-shadow: 0 0 7px 0px #ffffff00;
+    border: 1px solid #52dc90;
+}
+.bg-blue{
+    background-color: #002b57;
+    color: #fff;
+    box-shadow: 0 0 7px 0px #002b57;
+    border: 1px solid #002b57;
+}
+.border-blue{
+    color: #002b57;
+    border: 1px solid #002b57;
+}
+/*component*/
+.text-black{
+    color: #333;
+}
+.text-gray{
+    color: rgb(150, 148, 165);
+}
+.text-blue{
+    color: blue;
+}
+.button{
+    position: relative;
+    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: -3px;
+    border-radius: 3px;
+}
+/* navbar */
+nav{
+    position:relative;
+    width: 100%;
+    height: 60px;background-color: rgb(247, 147, 147);
+    box-shadow: -1px -7px 20px 0px #888;
+}
+
+nav ul{
+    position: relative;
+    top: 20px;
+    margin: 0;
+    float: right;
+    right: 10%;
+}
+
+    nav ul li{ 
+        float: left;
+        display: block;
+        margin: 0px 15px 0px 15px;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);font-family: Helvetica, sans-serif;
+        font-size: 15px;
+    }
+    nav ul li a:hover{
+        color: rgb(255, 255, 255);
+    }
+    .menu-mobile{
+        position: relative;
+        float: right;
+        display: none;
+    }
+    .menu-mobile a{
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 5px 10px 5px 10px;
+        border: 1px solid rgb(0, 0, 0);
+    }
+    /* profile section */
+    section#box-profile{position: relative;
+    width: 80%;
+min-height: 300px;
+margin-left: 10%;
+margin-right: 10%;
+margin-top: 60px;
+border-radius: 6px;
+background-color: #fff;
+box-shadow: 0 0 7px 0px rgba(136, 136, 136, 0,2)
+}
+#box-profile .img-profile{
+position: relative;
+display:inline-block;
+width: 250px;
+height: 250px;
+border-radius: 200px;
+float: left;
+top: 35px;
+margin-left: 10px;
+}
+.img-profile .photo{
+    height: 100%;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: -10px 5px;
+    border-radius: 260px;
+}
+.description{
+    position: relative;
+    width: 400px;
+    display: inline;
+    float: left;
+    top: -212px;
+    margin-left: 300px;
+    font-family: Helvetica, sans-serif;
+    border-right: 1px solid #ffffff00;
+}
+.description h1{
+    font-size: 30px;
+    margin-bottom: 14px;
+}
+.description p{
+    color: rgb(129, 120, 120);
+}
+.description .button{
+    margin-top: 20px;
+}
+.information{
+    position: relative;
+    display: inline-block;
+    float: left;
+    font-family: Helvetica, sans-serif;
+    top: -330px;
+    margin-left: 500px;
+}
+.information .data{
+    display: block;
+    width: 100%;
+    height: 39px;
+}
+.information p.field{
+    font-weight: 700;
+    width: 310px;
+    color: rgb(0, 0, 0);
+}
+.information .data p{
+    float: right;
+    width: 500px;
+
+  
+}
+ /* responsive di layar mobile middle*/
+ @media(min-width:300px) and (max-width:425px){
+     section#box-profile{
+         width: 90%;
+         height: 630px;
+         margin-left: 5%;
+         margin-right: 5%;
+         margin-top: 30px;
+     }
+     .menu-mobile{
+         top: 20px;
+         right: 10%;
+         display: inline-block;
+     }
+     nav ul{
+         display: none;
+         right: 0;
+         width: 100%;
+         text-align: center;
+         top: 43px;
+         z-index: 99;
+         background: #fff;
+     }
+     nav ul li{
+         float: unset;
+         margin: 0;
+         padding-top: 10px;
+         padding-bottom: 10px;
+     }
+     .description{
+         padding-left: 85px;
+         width: 70%;
+         height: 20%;
+         top: -10px;
+         text-align: center;
+         margin-left: 0;
+         border: none;
+     }
+     .description .button{
+         margin-right: 10px;
+         margin-left: 10px;
+     }
+     .img-profile .photo{
+         left: 45px;
+         position: relative;
+     }
+     .information{
+         top: 85px;
+         margin-left: 25px;
+         font-size: 14px;
+     }
+
+ }
+/* responsive mobile small */
+@media screen and (max-width: 320px){
+    section#box-profile{
+        width: 100%;
+        height: 760px;
+        margin-left: 25%;
+        margin-right: 50%;
+        margin-top: 30px;
+    }
+    .menu-mobile{
+        top: 20px;
+        right: 3%;
+        display: inline-block;   
+     }
+     nav ul{
+         display: none;
+         right: 0;
+         width: 100%;
+         text-align: center;
+         top: 43px;
+         z-index: 90;
+         background: #fff;
+     }
+     nav ul li{
+         float: unset;
+         margin: 0;
+         padding-top: 10px;
+         padding-bottom: 10px;
+     }
+     .description{
+         padding-left: 30px;
+         width: 90%;
+         text-align: center;
+         margin-left: 0;
+
+         
+     }
+     .description .button{
+         padding:10px 25px 10px 25px;
+         margin-right: 10px;
+         margin-left: 10px;
+     }
+     .img-profile .photo{
+         left: 10px;
+         position: relative;
+     }
+     
+     .information{
+      margin-bottom : 10px;
+
+      height: -30px;
+      top: 170px;
+    }
+
+    .information ,.data{
+      margin-bottom : 10px;
+      height: -30px;
+    }
+    .information P.field{
+      margin-bottom : 10px;
+      height: -30px;
+    }
+
+}
